@@ -1,0 +1,53 @@
+/*CSS RESET*/
+html {
+    box-sizing: border-box;
+    font-size: 16px; /*Default fontsize. Can now use rem units if I want.*/
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+/*END RESET*/
+li {
+    list-style-type: none;
+}
+nav {
+    text-align: center;
+    padding: 5px,5px,5px,5px; /*5px padding all around*/
+}
+nav li {
+    display: inline;
+    float: left;
+}
+nav a
+{
+    font-size: 25px;
+    text-decoration: none;
+    color: #4e45d1;
+    margin: 10px 50px 10px 50px;
+    display: block;
+}
+nav  li a:hover
+{
+    font-size: 28px; /*Make it bigger when you hover over it*/
+    color: #000;
+    background-color: #fff;
+    transition: 0.3s;
+    display: block;
+    overflow: hidden;
+}
