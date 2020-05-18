@@ -139,6 +139,26 @@ nav .nav_mobile img {
 h1 {
 	font-size: 25px;
 }
+/*--Footer--*/
+footer {
+	background-color: black;
+	color: white;
+	width: 100%;
+	display: block;
+	min-height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer a {
+	color: var(--block_txt_color);
+	font-weight: 550;
+	text-decoration: none;
+}
+footer a:hover {
+	color: var(--block_accent_color)
+}
+
 /*-- Tablets --*/
 
 @media only screen and (min-width: 600px) {
