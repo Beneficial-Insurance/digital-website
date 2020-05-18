@@ -22,6 +22,10 @@ img {
 }
 /*END RESET*/
 
+/*Root. Stuff that needs to be here in order for variables to work*/
+:root {
+	--main-background-colour: beige;
+}
 /*Main Content*/
 .wowslider{
   margin-top: 10px;
@@ -29,7 +33,7 @@ img {
 body {
 	width: 100%;
 	margin: auto;
-	background-color: beige;
+	background-color: var(--main-background-colour);
 }
 .content_main {
 	margin: auto;
@@ -143,13 +147,15 @@ h1 {
 footer {
 	background-color: black;
 	color: white;
-	width: 100%;
+	width: 80%;
 	display: block;
 	min-height: 100px;
 	margin-left: auto;
 	margin-right: auto;
 }
-
+footer p {
+	text-align: center;
+}
 footer a {
 	color: var(--block_txt_color);
 	font-weight: 550;
@@ -157,6 +163,14 @@ footer a {
 }
 footer a:hover {
 	color: var(--block_accent_color)
+}
+
+footer .footer_content {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0 30px;
+	height: auto;
+	text-align: center;
 }
 
 /*-- Tablets --*/
