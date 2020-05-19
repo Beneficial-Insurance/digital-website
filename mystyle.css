@@ -28,6 +28,7 @@ img {
 	--main-background-colour: beige;
 	--main-block-colour: red;
 	--main-font-colour: black;
+	--block-accent-colour: grey;
 }
 /*Main Content*/
 
@@ -110,12 +111,12 @@ nav .nav_desktop a {
     font-size: 20px;
 	margin-top: 23.5px;
 	color: var(--block_accent_txt_color);
-	background-color: var(--block_accent_color);
+	background-color: var(--block_accent_colour);
 	font-weight: bold;
 }
 nav .nav_desktop a:hover {
 	color: var(--block_txt_color);
-	background-color: var(--block_alt_accent_color);
+	background-color: var(--block-accent-colour);
 }
 
 nav .nav_desktop a:last-of-type {
@@ -150,7 +151,7 @@ nav .nav_mobile #mobile_links a:first-of-type {
 }
 nav .nav_mobile #mobile_links a:hover {
 	color: var(--block_txt_color);
-	background-color: var(--block_alt_accent_color);
+	background-color: var(--block_accent_colour);
 }
 
 nav .nav_mobile #mobile_links {
@@ -159,10 +160,10 @@ nav .nav_mobile #mobile_links {
 	width: 100%;
 	height: auto;
 	margin: 0;
-	background-color: var(--block_accent_color);
+	background-color: var(--block_accent_colour);
 }
 nav .nav_mobile a.icon:hover + #mobile_links {
-	background-color: var(--block_alt_accent_color);
+	background-color: var(--block_accent_colour);
 }
 
 nav .nav_mobile a.icon {
@@ -171,13 +172,15 @@ nav .nav_mobile a.icon {
     right: 0;
     top: 0;
 	color: var(--block_accent_txt_color);
-	background-color: var(--block_accent_color);
+	background-color: var(--block_accent_colour);
 }
 nav .nav_mobile a.icon:hover {
 	color: var(--block_txt_color);
-	background-color: var(--block_alt_accent_color);
+	background-color: var(--block_accent_colour);
 }
-
+nav .nav_mobile a:hover {
+	background-color: var(--block_accent_colour)
+}
 nav .nav_mobile img {
     height: 33px;
     width: auto;
@@ -220,10 +223,18 @@ footer .footer_content {
 	text-align: center;
 }
 /*-- Tablets --*/
+@media only screen and (min-width: 200px) {
+	.nav_desktop {
+		display: none;
+	}
+}
 
 @media only screen and (min-width: 600px) {
 	.content_main {
 		width: 75%;
+	}
+	.nav_desktop {
+		display: none;
 	}
 }
 /*-- Laptop & Desktop --*/
