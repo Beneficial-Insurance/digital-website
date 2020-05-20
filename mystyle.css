@@ -26,9 +26,9 @@ img {
 
 :root {
 	--main-background-colour: beige;
-	--main-block-colour: red;
+	--main-block-colour: white;
 	--main-font-colour: black;
-	--block-accent-colour: grey;
+	--block-accent-colour: purple;
 	--block-accent-alt-colour: coral;
 }
 /*Main Content*/
@@ -60,6 +60,16 @@ h1 {
 	font-weight: bold;
 	font-size: 25px;
 }
+h2 {
+	text-align: center;
+	font-weight: normal;
+	font-size: 25px;
+}
+hr {
+	width: 50%;
+	text-align: left;
+	margin-left: 0
+}
 /*Nav Bar*/
 
 nav {
@@ -79,37 +89,32 @@ nav a:hover {
 nav {
 	width: 100%;
 	display: block;
-	background-color:  var(--main-block-colour);
+	background-color: var(--main-block-colour);
 	color: var(--block_txt_color);
 	overflow: hidden;
 }
-
 nav a {
 	color: var(--block_txt_color);
 	text-decoration: none;
 }
-
 nav a:hover {
 	color: var(--block_txt_color);
 	background-color: var(--block-accent-alt-colour);
 	text-decoration: none;
 }
-
 /*--- Desktop ---*/
 
 nav .nav_desktop {
 	height: 100px;
 }
-
 nav .nav_desktop img {
 	height: 70px;
 	margin: 20px 0 0 auto;
 }
-
 nav .nav_desktop a {
 	float: right;
 	padding: 15px 10px;
-    font-size: 20px;
+	font-size: 20px;
 	margin-top: 23.5px;
 	color: var(--block_accent_txt_color);
 	background-color: var(--block-accent-colour);
@@ -119,34 +124,29 @@ nav .nav_desktop a:hover {
 	color: var(--block_txt_color);
 	background-color: var(--block-accent-colour);
 }
-
 nav .nav_desktop a:last-of-type {
 	border-radius: 8px 0 0 8px;
 }
-
 nav .nav_desktop a:first-of-type {
 	border-radius: 0 8px 8px 0;
 }
-
 /*--- Mobile ---*/
 
 nav .nav_mobile {
 	height: 48px;
 }
 nav .nav_mobile #mobile_links {
-    display: none;
+	display: none;
 }
-
 nav .nav_mobile a {
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
 	background-color: var(--main-block-colour);
 	margin: 0;
 	font-weight: bold;
 }
-
 nav .nav_mobile #mobile_links a:first-of-type {
 	margin-top: 5px;
 }
@@ -154,7 +154,6 @@ nav .nav_mobile #mobile_links a:hover {
 	color: var(--block_txt_color);
 	background-color: var(--block-accent-colour);
 }
-
 nav .nav_mobile #mobile_links {
 	position: absolute;
 	top: 48px;
@@ -163,15 +162,14 @@ nav .nav_mobile #mobile_links {
 	margin: 0;
 	background-color: var(--block-accent-colour);
 }
-nav .nav_mobile a.icon:hover + #mobile_links {
-	background-color: var(--block-accent-colour);
+nav .nav_mobile a.icon:hover+#mobile_links {
+	background-color: var(--block-accent-alt-colour);
 }
-
 nav .nav_mobile a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
 	color: var(--block_accent_txt_color);
 	background-color: var(--block-accent-colour);
 }
@@ -183,18 +181,16 @@ nav .nav_mobile a:hover {
 	background-color: var(--block-accent-colour)
 }
 nav .nav_mobile img {
-    height: 33px;
-    width: auto;
-    padding: 8px;
-    margin-left: 5px;
+	height: 33px;
+	width: auto;
+	padding: 8px;
+	margin-left: 5px;
 }
-
 .spacer {
 	display: block;
 	width: 100%;
 	height: 20px;
 }
-
 /*--Footer--*/
 
 footer {
@@ -204,6 +200,8 @@ footer {
 	min-height: 100px;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+	bottom: auto;
 }
 footer p {
 	text-align: center;
@@ -224,12 +222,12 @@ footer .footer_content {
 	text-align: center;
 }
 /*-- Tablets --*/
+
 @media only screen and (min-width: 200px) {
 	.nav_desktop {
 		display: none;
 	}
 }
-
 @media only screen and (min-width: 600px) {
 	.content_main {
 		width: 75%;
