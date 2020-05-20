@@ -29,6 +29,7 @@ img {
 	--main-block-colour: red;
 	--main-font-colour: black;
 	--block-accent-colour: grey;
+	--block-accent-alt-colour: coral;
 }
 /*Main Content*/
 
@@ -90,7 +91,7 @@ nav a {
 
 nav a:hover {
 	color: var(--block_txt_color);
-	background-color: var(--block_alt_accent_color);
+	background-color: var(--block-accent-alt-colour);
 	text-decoration: none;
 }
 
@@ -111,7 +112,7 @@ nav .nav_desktop a {
     font-size: 20px;
 	margin-top: 23.5px;
 	color: var(--block_accent_txt_color);
-	background-color: var(--block_accent_colour);
+	background-color: var(--block-accent-colour);
 	font-weight: bold;
 }
 nav .nav_desktop a:hover {
@@ -151,7 +152,7 @@ nav .nav_mobile #mobile_links a:first-of-type {
 }
 nav .nav_mobile #mobile_links a:hover {
 	color: var(--block_txt_color);
-	background-color: var(--block_accent_colour);
+	background-color: var(--block-accent-colour);
 }
 
 nav .nav_mobile #mobile_links {
@@ -160,10 +161,10 @@ nav .nav_mobile #mobile_links {
 	width: 100%;
 	height: auto;
 	margin: 0;
-	background-color: var(--block_accent_colour);
+	background-color: var(--block-accent-colour);
 }
 nav .nav_mobile a.icon:hover + #mobile_links {
-	background-color: var(--block_accent_colour);
+	background-color: var(--block-accent-colour);
 }
 
 nav .nav_mobile a.icon {
@@ -172,14 +173,14 @@ nav .nav_mobile a.icon {
     right: 0;
     top: 0;
 	color: var(--block_accent_txt_color);
-	background-color: var(--block_accent_colour);
+	background-color: var(--block-accent-colour);
 }
 nav .nav_mobile a.icon:hover {
 	color: var(--block_txt_color);
-	background-color: var(--block_accent_colour);
+	background-color: var(--block-accent-colour);
 }
 nav .nav_mobile a:hover {
-	background-color: var(--block_accent_colour)
+	background-color: var(--block-accent-colour)
 }
 nav .nav_mobile img {
     height: 33px;
@@ -213,7 +214,7 @@ footer a {
 	text-decoration: none;
 }
 footer a:hover {
-	color: var(--block_accent_color)
+	color: var(--block-accent-colour)
 }
 footer .footer_content {
 	display: block;
