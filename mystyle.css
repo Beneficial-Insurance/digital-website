@@ -12,6 +12,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
+	font-size: 16px;
 }
 ol, ul {
 	list-style: none;
@@ -25,8 +26,8 @@ img {
 /*Root. Stuff that needs to be here in order for variables to work*/
 
 :root {
-	--main-background-colour: beige;
-	--main-block-colour: white;
+	--main-background-colour: white;
+	--main-block-colour: grey;
 	--main-font-colour: black;
 	--block-accent-colour: purple;
 	--block-accent-alt-colour: coral;
@@ -41,7 +42,7 @@ html {
 }
 body {
 	width: 100%;
-	background-color: var(--main-background-colour);
+	background-color: beige;
 }
 .content_main {
 	margin: auto;
@@ -70,6 +71,14 @@ hr {
 	text-align: left;
 	margin-left: 0
 }
+.bullet {
+	margin-left: 20px;
+	display: block;
+}
+.content_content {
+	position: relative;
+	nav: 10px;
+}
 /*Nav Bar*/
 
 nav {
@@ -92,6 +101,7 @@ nav {
 	background-color: var(--main-block-colour);
 	color: var(--block_txt_color);
 	overflow: hidden;
+	font-size: 20px;
 }
 nav a {
 	color: var(--block_txt_color);
@@ -203,16 +213,17 @@ footer {
 	position: relative;
 	bottom: auto;
 }
+/*FLOATING THE FACEBOOK LOGO TO THE RIGHT*/
 footer p {
 	text-align: center;
-}
+}/*CENTEREING THE FOOTER STUFF*/
 footer a {
 	color: var(--main-font-colour);
 	font-weight: 550;
 	text-decoration: none;
 }
 footer a:hover {
-	color: var(--block-accent-colour)
+	color: var(--block-accent-colour);
 }
 footer .footer_content {
 	display: block;
