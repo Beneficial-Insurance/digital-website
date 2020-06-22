@@ -294,7 +294,7 @@ width: 100%;
 	opacity: 1.0;
 }
 .desktop_nav li {
-	float: left;
+	float: right;
 	display: inline;
 	/*Not sure if necessary*/
 	margin-top: auto;
@@ -307,7 +307,7 @@ width: 100%;
 	text-align: center;
 	padding: /*14px*/ 26px;
 	text-decoration: none;
-	float: right;
+	float: left;
 }
 /* Change the link color to #111 (black) on hover */
 
