@@ -276,7 +276,7 @@ width: 100%;
 	overflow: hidden;
 	background-color: var(--background-navigation-colour);
 	width: 100%;
-	float: right;
+	float: left;
 	margin-top: auto;
 	margin-bottom: auto;
 }
@@ -294,7 +294,7 @@ width: 100%;
 	opacity: 1.0;
 }
 .desktop_nav li {
-	float: right;
+	float: left;
 	display: inline;
 	/*Not sure if necessary*/
 	margin-top: auto;
